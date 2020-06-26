@@ -4,11 +4,18 @@ body{
     margin: 0;
     padding: 0;
     font-family:'Poppins',sans-serif; 
-    overflow: hidden;
   }
 
 html{
     scroll-behavior: smooth;
+}
+div{
+  ::-webkit-scrollbar{
+    display:none;
+  }
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+  overflow-x:hidden;
 }
 
 .nav-link{
@@ -65,8 +72,7 @@ html{
   }
    
 }
-   
-}
+
 .content{
     box-sizing: border-box;
     height: 100%;
@@ -323,7 +329,7 @@ card-back:hover{
 }
 .team-round {
   margin-bottom: 0px;
-  }
+}
 .team-round .profile {
   margin: auto;
   background: transparent;
@@ -333,6 +339,8 @@ card-back:hover{
   position: relative;
   text-align: center;
   padding-top: 10px;
+  overflow-y: hidden;
+  
 }
 .team-round .profile:before {
   content: '';
