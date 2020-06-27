@@ -21,7 +21,9 @@ div{
 .nav-link{
   font-size: 1.25rem;
 }
-
+.navbar-custom{
+  background-color: #000;
+}
 .zoom{
     width: 100%;
     height: 1000px;
@@ -82,8 +84,8 @@ div{
 .services{
     background: black;
 }
-@media screen and (max-width: 767px) {
-   #services{
+@media screen and (max-width: 1200px) {
+   #service{
     text-align: center;
    }
 }
@@ -139,6 +141,8 @@ div{
    flex-direction: column;
    cursor: pointer;
    transition: all 0.3s ease;
+   overflow-y: hidden;
+
 }
 
 .icon {
@@ -340,7 +344,7 @@ card-back:hover{
   text-align: center;
   padding-top: 10px;
   overflow-y: hidden;
-  
+
 }
 .team-round .profile:before {
   content: '';
